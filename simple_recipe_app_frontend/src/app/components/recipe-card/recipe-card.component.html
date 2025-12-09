@@ -1,0 +1,17 @@
+<a class="card card-link" [routerLink]="['/recipe', recipe.id]" (click)="onSelect()" data-testid="recipe-card">
+  <div class="thumb" [style.backgroundImage]="'url(' + recipe.image + ')'">
+    <div class="thumb-overlay"></div>
+  </div>
+  <div class="card-body">
+    <h3 class="title">{{ recipe.title }}</h3>
+    <p class="desc">{{ recipe.description }}</p>
+    <div class="tags">
+      <span class="tag" *ngFor="let t of recipe.tags; trackBy: trackTag">#{{ t }}</span>
+    </div>
+    <div class="meta">
+      <span>{{ recipe.time }}</span>
+      <span>•</span>
+      <span>{{ recipe.servings }} servings</span>
+    </div>
+  </div>
+</a>

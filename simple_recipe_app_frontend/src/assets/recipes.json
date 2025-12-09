@@ -1,0 +1,234 @@
+[
+  {
+    "id": "1",
+    "title": "Classic Margherita Pizza",
+    "image": "assets/placeholder/pizza.jpg",
+    "description": "A timeless favorite featuring fresh tomatoes, mozzarella, and basil.",
+    "ingredients": [
+      "Pizza dough",
+      "Tomato sauce",
+      "Fresh mozzarella",
+      "Fresh basil leaves",
+      "Olive oil",
+      "Salt"
+    ],
+    "steps": [
+      "Preheat the oven to 500°F (260°C).",
+      "Stretch the dough and spread tomato sauce evenly.",
+      "Top with mozzarella slices and drizzle with olive oil.",
+      "Bake until the crust is golden and cheese is bubbly.",
+      "Finish with fresh basil leaves and a pinch of salt."
+    ],
+    "tags": ["Italian", "Vegetarian"],
+    "time": "35 mins",
+    "servings": 2
+  },
+  {
+    "id": "2",
+    "title": "Grilled Lemon Herb Chicken",
+    "image": "assets/placeholder/chicken.jpg",
+    "description": "Juicy grilled chicken marinated with lemon, garlic, and herbs.",
+    "ingredients": [
+      "Chicken breasts",
+      "Lemon juice",
+      "Garlic",
+      "Olive oil",
+      "Thyme",
+      "Rosemary",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Marinate chicken with lemon, garlic, herbs, and oil for 30 minutes.",
+      "Preheat grill to medium-high heat.",
+      "Grill chicken 6–7 minutes per side until cooked through.",
+      "Rest for 5 minutes before slicing."
+    ],
+    "tags": ["Grill", "Gluten-Free"],
+    "time": "45 mins",
+    "servings": 4
+  },
+  {
+    "id": "3",
+    "title": "Avocado Toast Deluxe",
+    "image": "assets/placeholder/avocado_toast.jpg",
+    "description": "Creamy avocado spread on crunchy toast with optional toppings.",
+    "ingredients": [
+      "Sourdough bread",
+      "Avocado",
+      "Lemon juice",
+      "Chili flakes",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Toast the sourdough slices.",
+      "Mash avocado with lemon juice, salt, and pepper.",
+      "Spread on toast and top with chili flakes."
+    ],
+    "tags": ["Breakfast", "Vegan"],
+    "time": "10 mins",
+    "servings": 2
+  },
+  {
+    "id": "4",
+    "title": "Spaghetti Bolognese",
+    "image": "assets/placeholder/bolognese.jpg",
+    "description": "Rich and savory meat sauce served over al dente spaghetti.",
+    "ingredients": [
+      "Spaghetti",
+      "Ground beef",
+      "Onion",
+      "Garlic",
+      "Tomato puree",
+      "Carrot",
+      "Celery",
+      "Olive oil",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Sauté onion, carrot, and celery in olive oil.",
+      "Add ground beef and cook until browned.",
+      "Stir in tomato puree and simmer 20 minutes.",
+      "Cook spaghetti according to package directions.",
+      "Serve sauce over spaghetti."
+    ],
+    "tags": ["Pasta", "Comfort"],
+    "time": "50 mins",
+    "servings": 4
+  },
+  {
+    "id": "5",
+    "title": "Quinoa Veggie Bowl",
+    "image": "assets/placeholder/quinoa.jpg",
+    "description": "A wholesome bowl of quinoa topped with roasted veggies and tahini.",
+    "ingredients": [
+      "Quinoa",
+      "Sweet potato",
+      "Broccoli",
+      "Chickpeas",
+      "Tahini",
+      "Lemon",
+      "Olive oil",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Cook quinoa according to package instructions.",
+      "Roast chopped veggies with oil, salt, and pepper at 400°F (200°C) for 20–25 minutes.",
+      "Whisk tahini with lemon juice and water to thin.",
+      "Assemble bowl with quinoa, veggies, chickpeas, and drizzle tahini dressing."
+    ],
+    "tags": ["Healthy", "Vegan", "Gluten-Free"],
+    "time": "35 mins",
+    "servings": 3
+  },
+  {
+    "id": "6",
+    "title": "Beef Tacos",
+    "image": "assets/placeholder/tacos.jpg",
+    "description": "Seasoned ground beef in warm tortillas with fresh toppings.",
+    "ingredients": [
+      "Ground beef",
+      "Taco seasoning",
+      "Tortillas",
+      "Lettuce",
+      "Tomatoes",
+      "Cheddar cheese",
+      "Sour cream"
+    ],
+    "steps": [
+      "Cook ground beef with taco seasoning.",
+      "Warm tortillas in a pan.",
+      "Assemble tacos with beef and toppings."
+    ],
+    "tags": ["Mexican", "Quick"],
+    "time": "25 mins",
+    "servings": 4
+  },
+  {
+    "id": "7",
+    "title": "Tomato Basil Soup",
+    "image": "assets/placeholder/soup.jpg",
+    "description": "Comforting tomato soup with fragrant basil and cream.",
+    "ingredients": [
+      "Canned tomatoes",
+      "Onion",
+      "Garlic",
+      "Vegetable broth",
+      "Cream",
+      "Basil",
+      "Olive oil",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Sauté onion and garlic in olive oil.",
+      "Add tomatoes and broth, simmer 15 minutes.",
+      "Blend until smooth; add cream and basil."
+    ],
+    "tags": ["Soup", "Vegetarian"],
+    "time": "30 mins",
+    "servings": 4
+  },
+  {
+    "id": "8",
+    "title": "Berry Yogurt Parfait",
+    "image": "assets/placeholder/parfait.jpg",
+    "description": "Layers of yogurt, granola, and fresh berries.",
+    "ingredients": [
+      "Greek yogurt",
+      "Granola",
+      "Mixed berries",
+      "Honey"
+    ],
+    "steps": [
+      "Layer yogurt, granola, and berries in a glass.",
+      "Drizzle with honey and serve."
+    ],
+    "tags": ["Dessert", "Breakfast", "Vegetarian"],
+    "time": "5 mins",
+    "servings": 2
+  },
+  {
+    "id": "9",
+    "title": "Garlic Shrimp Pasta",
+    "image": "assets/placeholder/shrimp_pasta.jpg",
+    "description": "Garlicky shrimp tossed with spaghetti and parsley.",
+    "ingredients": [
+      "Spaghetti",
+      "Shrimp",
+      "Garlic",
+      "Olive oil",
+      "Parsley",
+      "Lemon",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Cook spaghetti until al dente.",
+      "Sauté garlic in olive oil, add shrimp and cook until pink.",
+      "Toss shrimp with pasta, lemon juice, and parsley."
+    ],
+    "tags": ["Seafood", "Quick"],
+    "time": "25 mins",
+    "servings": 3
+  },
+  {
+    "id": "10",
+    "title": "Caprese Salad",
+    "image": "assets/placeholder/caprese.jpg",
+    "description": "Fresh tomatoes, mozzarella, and basil with balsamic glaze.",
+    "ingredients": [
+      "Tomatoes",
+      "Fresh mozzarella",
+      "Basil",
+      "Olive oil",
+      "Balsamic glaze",
+      "Salt & pepper"
+    ],
+    "steps": [
+      "Slice tomatoes and mozzarella.",
+      "Layer with basil leaves, drizzle olive oil and balsamic glaze.",
+      "Season with salt and pepper."
+    ],
+    "tags": ["Salad", "Vegetarian", "Gluten-Free"],
+    "time": "10 mins",
+    "servings": 2
+  }
+]

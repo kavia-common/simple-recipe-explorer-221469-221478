@@ -1,0 +1,22 @@
+<section>
+  <ng-container *ngIf="vm$ | async as vm">
+    <ng-container *ngIf="!vm.error; else errorTpl">
+      <ng-container *ngIf="vm.recipes.length > 0; else emptyTpl">
+        <app-recipe-grid [recipes]="vm.recipes"></app-recipe-grid>
+      </ng-container>
+    </ng-container>
+  </ng-container>
+</section>
+
+<ng-template #emptyTpl>
+  <div class="card empty">
+    <div class="empty-inner">
+      <h3>No recipes found</h3>
+      <p class="helper-muted">Try different keywords or clear the search to see all recipes.</p>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #errorTpl>
+  <div class="alert">Failed to load recipes. Showing empty list.</div>
+</ng-template>

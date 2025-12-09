@@ -1,0 +1,47 @@
+<div *ngIf="vm$ | async as recipe; else errorTpl">
+  <nav class="detail-nav">
+    <a class="btn btn-outline" (click)="backToList()">← Back to recipes</a>
+  </nav>
+
+  <article class="card detail-card" *ngIf="recipe?.id; else notFoundTpl">
+    <div class="hero">
+      <img [ngSrc]="recipe.image" width="1200" height="600" alt="{{ recipe.title }}" />
+      <div class="hero-overlay"></div>
+      <div class="hero-title">
+        <h1 data-testid="recipe-detail-title">{{ recipe.title }}</h1>
+        <div class="meta">
+          <span>{{ recipe.time }}</span>
+          <span>•</span>
+          <span>{{ recipe.servings }} servings</span>
+        </div>
+        <div class="tags">
+          <span class="tag" *ngFor="let t of recipe.tags; trackBy: track">#{{ t }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-body">
+      <section class="detail-section">
+        <h2>Ingredients</h2>
+        <ul>
+          <li *ngFor="let ing of recipe.ingredients; trackBy: track">{{ ing }}</li>
+        </ul>
+      </section>
+
+      <section class="detail-section">
+        <h2>Steps</h2>
+        <ol>
+          <li *ngFor="let step of recipe.steps; trackBy: track">{{ step }}</li>
+        </ol>
+      </section>
+    </div>
+  </article>
+</div>
+
+<ng-template #errorTpl>
+  <div class="alert">There was an issue loading this recipe. Please try again.</div>
+</ng-template>
+
+<ng-template #notFoundTpl>
+  <div class="alert">Recipe not found.</div>
+</ng-template>

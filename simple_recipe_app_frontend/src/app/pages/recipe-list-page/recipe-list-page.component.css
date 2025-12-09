@@ -1,0 +1,8 @@
+.empty {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.empty-inner {
+  text-align: center;
+}

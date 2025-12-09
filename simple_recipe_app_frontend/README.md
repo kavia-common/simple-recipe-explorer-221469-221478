@@ -1,59 +1,53 @@
-# Angular
+# Simple Recipe App — Angular Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+A lightweight recipe browser with search and detail view following the "Ocean Professional" theme.
 
-## Development server
-
-To start a local development server, run:
-
+## Run the app (port 3000)
 ```bash
-ng serve
+npm install
+npm start
+# open http://localhost:3000
 ```
+The Angular dev-server is configured to run on port 3000 for preview systems.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## API configuration
+The app reads the API base URL from environment variables:
+- `NG_APP_API_BASE` or `NG_APP_BACKEND_URL`
 
-## Code scaffolding
+If neither is provided, it falls back to local mock data at `assets/recipes.json`.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+Example:
 ```bash
-ng generate component component-name
+# Linux/macOS
+NG_APP_API_BASE="https://my-api.example.com" npm start
+# Windows (PowerShell)
+$env:NG_APP_API_BASE="https://my-api.example.com"; npm start
 ```
+Expected API endpoints:
+- `GET {API_BASE}/recipes` -> Recipe[]
+- `GET {API_BASE}/recipes/:id` -> Recipe
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Other envs considered but optional:
+- `NG_APP_FRONTEND_URL`, `NG_APP_WS_URL`, `NG_APP_NODE_ENV`,
+  `NG_APP_ENABLE_SOURCE_MAPS`, `NG_APP_PORT`, `NG_APP_LOG_LEVEL`,
+  `NG_APP_FEATURE_FLAGS`
 
-```bash
-ng generate --help
-```
+## Features
+- Responsive grid of recipe cards
+- Top search bar filters by name/ingredient/tag (300ms debounce)
+- Details view with ingredients and steps
+- Basic routing:
+  - `/` list page
+  - `/recipe/:id` details page (deep linking)
+- State preserved in a service (search query)
+- OnPush change detection, trackBy for lists
+- Friendly empty and error states
+- Themed styling with accessible contrasts
 
-## Building
+## Testing hooks
+- `data-testid="search-input"` on the search field
+- `data-testid="recipe-card"` on cards
+- `data-testid="recipe-detail-title"` on the details title
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Assets
+Mock data in `src/assets/recipes.json`. Placeholder filenames are listed in `src/assets/placeholder/README.txt`. Replace with real images as desired.

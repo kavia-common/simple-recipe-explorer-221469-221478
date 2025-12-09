@@ -1,0 +1,22 @@
+<header class="navbar" role="banner">
+  <div class="container navbar-inner">
+    <a routerLink="/" class="brand" aria-label="Simple Recipe App Home">
+      <span class="brand-accent" aria-hidden="true"></span>
+      Simple Recipe App
+    </a>
+    <div class="search-area">
+      <label class="sr-only" for="search">Search recipes</label>
+      <input
+        id="search"
+        class="search-input"
+        type="search"
+        name="search"
+        placeholder="Search recipes by name, ingredient, or tag..."
+        [(ngModel)]="query"
+        (ngModelChange)="onSearchChange($event)"
+        data-testid="search-input"
+        aria-label="Search recipes"
+      />
+    </div>
+  </div>
+</header>
